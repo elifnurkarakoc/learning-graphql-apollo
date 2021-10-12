@@ -11,10 +11,17 @@ const PokemonDetails = () => {
   if (error) return <p>Error :(</p>;
   console.log({ data });
   return (
-    <div className="">
-      <h2>{data.pokemon.name}</h2>
-      <p>{data.pokemon.number}</p>
-      <code>{JSON.stringify(data.pokemon)}</code>
+    <div className="container">
+      <h2 className="pokemons-title">{data.pokemon.name}</h2>
+      <div className="pokemon-details">
+      
+      <p className="text"><strong>ID: </strong> {data.pokemon.id}</p>
+      <p className="text"><strong>Number: </strong>  {data.pokemon.number}</p>
+      <p className="text"><strong>Name: </strong> {data.pokemon.name}</p>
+
+      <img src={data.pokemon.image} className="pokemon-img" alt="" />
+      </div>
+      {/* <code>{JSON.stringify(data.pokemon)}</code> */}
     </div>
   );
 };

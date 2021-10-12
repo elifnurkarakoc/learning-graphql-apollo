@@ -7,8 +7,8 @@ const Pokemons = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
   return (
-    <>
-      <h2 className="pokemons-title">Pokemons</h2>
+    <div className="container">
+      <h2 className=" pokemons-title">Pokemons</h2>
       <div className="pokemons">
         <div className="pokemons-list">
           {data.pokemons.map((pokemon, key) => (
@@ -16,7 +16,7 @@ const Pokemons = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

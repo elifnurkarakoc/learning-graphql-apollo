@@ -1,25 +1,54 @@
-.pokemons{
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+.pokemons {
   text-align: center;
-display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: absolute;
 }
 
 .pokemons-title {
-  
   text-align: center;
+  margin: 6px;
+  padding: 20px;
+  color: green;
+
 }
 
-.pokemons .pokemons-list{
+.pokemons .pokemons-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.pokemon{
-  padding: 10px;
-  border: solid 2px #eee;
-  margin: 6px;
+.pokemon {
+  width: 200px;
+  height: 180px;
+  margin: auto;
+  border: 3px solid green;
+  margin: 5px;
+
 }
 
-.pokemon .pokemon-img{
-  width: 75px; ;
+.pokemon .pokemon-img {
+  margin: auto;
+  width: 35%;
+  padding: 8px;
+}
+
+.pokemon .pokemon-name{
+  padding: 10px;
+}
+.text {
+  padding: 4px;
+}
+.pokemon-details{
+  column-count: 2;
+  column-gap: 10px;
 }

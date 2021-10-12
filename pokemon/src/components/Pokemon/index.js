@@ -7,8 +7,9 @@ const Pokemon = ({ pokemon }) => {
       {" "}
       <Link to={{ pathname: `/${pokemon.id}` }}>
         <div className="pokemon">
-          <p className="">{pokemon.name}</p>
+        <p className="pokemon-name">{pokemon.name}</p>
           <img src={pokemon.image} className="pokemon-img" alt="" />
+          
         </div>
       </Link>
     </>
